@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NACRÉ — Nail Atelier · Manicura, gel, acrílico y nail art</title>
+  <meta name="description" content="Estudio de uñas con diseños de manicura, gel semipermanente, uñas acrílicas y nail art. Explora la galería, elige tu inspiración y solicita tu cita en línea.">
+  <meta name="theme-color" content="#120A0E">
+  <meta name="color-scheme" content="dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="NACRÉ — Nail Atelier">
+  <meta property="og:title" content="NACRÉ — Nail Atelier">
+  <meta property="og:description" content="Color, forma y diseños que hablan de ti. Encuentra la inspiración para tu próxima manicura y solicita tu cita.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    /* Las animaciones de entrada solo se preparan si el script principal llega a ejecutarse;
+       si falla, este temporizador vuelve a mostrar todo el contenido. */
+    (function (d) {
+      d.classList.add("js");
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      d.classList.add("motion");
+      setTimeout(function () { if (!window.__nacreReady) d.classList.remove("motion"); }, 2500);
+    })(document.documentElement);
+  </script>
+  <script src="business-config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="cursor-glow" aria-hidden="true" data-cursor-glow></div>
+
+  <header class="site-header" data-header>
+    <div class="header-pill">
+      <a class="logo" href="#inicio" aria-label="NACRÉ Nail Atelier, ir al inicio">
+        <span class="logo-word">nacré</span><span class="logo-dot" aria-hidden="true"></span>
+      </a>
+
+      <nav class="nav" id="menu-principal" aria-label="Principal" data-nav>
+        <ul class="nav-list">
+          <li style="--i:0"><a href="#servicios"><span class="nav-num" aria-hidden="true">01</span><span class="nav-text"><span>Servicios</span></span></a></li>
+          <li style="--i:1"><a href="#disenos"><span class="nav-num" aria-hidden="true">02</span><span class="nav-text"><span>Diseños</span></span></a></li>
+          <li style="--i:2"><a href="#estudio"><span class="nav-num" aria-hidden="true">03</span><span class="nav-text"><span>El estudio</span></span></a></li>
+          <li style="--i:3"><a href="#contacto"><span class="nav-num" aria-hidden="true">04</span><span class="nav-text"><span>Contacto</span></span></a></li>
+        </ul>
+        <p class="nav-foot" aria-hidden="true">Nail Atelier · Manicura · Gel · Acrílico · Nail art</p>
+      </nav>
+
+      <a class="btn btn-pearl btn-sm header-cta" href="#cita" data-magnetic><span>Reservar</span></a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-principal" data-menu-toggle>
+        <span class="visually-hidden" data-menu-label>Abrir menú</span>
+        <span class="menu-lines" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- PORTADA -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title" data-hero>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-nails" aria-hidden="true" data-hero-nails>
+        <span class="hn hn-1" data-depth="1" style="--r:16deg; --d:.55s"><img src="assets/img/nail-cherry.webp" width="300" height="520" alt="" decoding="async"></span>
+        <span class="hn hn-2" data-depth=".75" style="--r:-14deg; --d:.7s"><img src="assets/img/nail-aurora.webp" width="300" height="520" alt="" decoding="async"></span>
+        <span class="hn hn-3" data-depth=".55" style="--r:24deg; --d:.85s"><img src="assets/img/nail-pearl.webp" width="300" height="520" alt="" decoding="async"></span>
+        <span class="hn hn-4 is-far" data-depth=".3" style="--r:-28deg; --d:.6s"><img src="assets/img/nail-lilac.webp" width="300" height="520" alt="" decoding="async"></span>
+        <span class="hn hn-5 is-far" data-depth=".25" style="--r:32deg; --d:.75s"><img src="assets/img/nail-champ.webp" width="300" height="520" alt="" decoding="async"></span>
+        <span class="hn hn-6 is-far" data-depth=".4" style="--r:-8deg; --d:.9s"><img src="assets/img/nail-french.webp" width="300" height="520" alt="" decoding="async"></span>
+      </div>
+
+      <div class="wrap hero-inner">
+        <p class="hero-kicker intro" style="--d:.05s"><span class="pulse-dot" aria-hidden="true"></span>Nail Atelier · Estudio de uñas</p>
+        <h1 class="hero-title" id="hero-title" data-chars>
+          <span class="ht-line">Tu estilo,</span>
+          <span class="ht-line">hasta el último</span>
+          <span class="ht-line"><em>detalle.</em></span>
+        </h1>
+        <div class="hero-foot">
+          <p class="hero-lead intro" style="--d:.9s">Color, forma y diseños que hablan de ti. Encuentra la inspiración para tu próxima manicura.</p>
+          <div class="hero-actions intro" style="--d:1.05s">
+            <a class="btn btn-pearl" href="#cita" data-magnetic><span>Solicitar mi cita</span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost" href="#disenos" data-magnetic><span>Explorar diseños</span></a>
+          </div>
+          <a class="scroll-cue intro" style="--d:1.2s" href="#servicios">
+            <span class="scroll-cue-track" aria-hidden="true"><span></span></span>
+            <span>Desliza</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="panel-section services" id="servicios" aria-labelledby="servicios-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-num">01</span> Servicios</p>
+            <h2 class="title" id="servicios-title" data-chars>Un acabado para cada <em>estilo.</em></h2>
+          </div>
+          <p class="section-aside reveal">Elige con qué empezar. Pulsa <strong>Consultar</strong> y el servicio quedará elegido en tu solicitud de cita.</p>
+        </div>
+        <ul class="bento" data-services></ul>
+        <p class="services-note reveal" data-pricing-note hidden></p>
+        <noscript><p class="services-note">Activa JavaScript para ver el menú de servicios.</p></noscript>
+      </div>
+    </section>
+
+    <!-- DISEÑOS -->
+    <section class="panel-section designs" id="disenos" aria-labelledby="disenos-title" data-designs>
+      <div class="designs-pin" data-pin>
+        <div class="designs-stage" data-stage>
+          <div class="wrap designs-head">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-num">02</span> Diseños</p>
+              <h2 class="title" id="disenos-title" data-chars>Encuentra tu próximo <em>diseño.</em></h2>
+            </div>
+            <div class="designs-tools">
+              <p class="section-aside">Filtra por estilo, abre cada diseño para verlo de cerca y envíalo como referencia en tu solicitud.</p>
+              <div class="filters" role="group" aria-label="Filtrar diseños por estilo" data-filters></div>
+            </div>
+          </div>
+          <p class="visually-hidden" aria-live="polite" data-gallery-status></p>
+
+          <div class="track-viewport" data-track-viewport>
+            <ul class="track" data-gallery></ul>
+          </div>
+
+          <div class="wrap designs-foot">
+            <div class="track-progress" aria-hidden="true"><span data-track-progress></span></div>
+            <p class="track-hint" aria-hidden="true" data-track-hint>Desliza para ver más</p>
+          </div>
+          <p class="wrap gallery-note" data-gallery-note hidden></p>
+          <noscript><p class="wrap gallery-note">Activa JavaScript para ver la galería de diseños.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTUDIO -->
+    <section class="panel-section studio" id="estudio" aria-labelledby="estudio-title">
+      <div class="wrap studio-grid">
+        <div class="studio-aside">
+          <p class="eyebrow"><span class="eyebrow-num">03</span> El estudio</p>
+          <h2 class="title" id="estudio-title" data-chars>Un espacio para elegir, crear y <em>disfrutar.</em></h2>
+          <p class="studio-lead reveal">Aquí puedes elegir con calma: tonos, formas y detalles que se adapten a tu estilo y a tu día a día.</p>
+          <figure class="studio-photo mask-reveal">
+            <img data-config-image="studio" src="assets/img/studio.webp" width="1400" height="934" loading="lazy" decoding="async"
+                 alt="Mesa de trabajo oscura con esmaltes cereza, lila, rosa y champaña, un abanico de muestras de uñas, perlas y un anillo dorado.">
+          </figure>
+        </div>
+
+        <ol class="stack" data-stack>
+          <li class="stack-card" style="--bg:#F49AAE; --i:0">
+            <span class="stack-num" aria-hidden="true">01</span>
+            <div class="stack-body">
+              <h3>Tus preferencias</h3>
+              <p>Comparte tu idea, una imagen o el estilo que te gusta como punto de partida.</p>
+            </div>
+            <svg class="stack-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 36c10 2 20-2 26-12M30 10l8 8-14 14-10 2 2-10z"/></svg>
+          </li>
+          <li class="stack-card" style="--bg:#CDB9F2; --i:1">
+            <span class="stack-num" aria-hidden="true">02</span>
+            <div class="stack-body">
+              <h3>Color y forma</h3>
+              <p>Explora tonos, largos y formas hasta encontrar la combinación que va contigo.</p>
+            </div>
+            <figure class="stack-media">
+              <img data-config-image="studioDetail" src="assets/img/studio-detail.webp" width="800" height="1000" loading="lazy" decoding="async"
+                   alt="Carta de muestras con doce acabados y cuatro formas de uña sobre terciopelo violeta.">
+            </figure>
+          </li>
+          <li class="stack-card" style="--bg:#E7C99B; --i:2">
+            <span class="stack-num" aria-hidden="true">03</span>
+            <div class="stack-body">
+              <h3>Atención individual</h3>
+              <p>Tu cita gira en torno a lo que quieres lograr con tu manicura.</p>
+            </div>
+            <svg class="stack-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="17" r="7"/><path d="M10 40c2-8 7-12 14-12s12 4 14 12"/></svg>
+          </li>
+          <li class="stack-card is-dark" style="--bg:#C02550; --i:3">
+            <span class="stack-num" aria-hidden="true">04</span>
+            <div class="stack-body">
+              <h3>El ambiente</h3>
+              <p>Un espacio tranquilo para disfrutar tu tiempo mientras se crea tu diseño.</p>
+            </div>
+            <svg class="stack-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6c2 8 6 12 14 14-8 2-12 6-14 14-2-8-6-12-14-14 8-2 12-6 14-14z"/></svg>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CITA -->
+    <section class="panel-section booking" id="cita" aria-labelledby="cita-title">
+      <div class="wrap booking-grid">
+        <div class="booking-intro">
+          <p class="eyebrow"><span class="eyebrow-num">04</span> Tu próxima cita</p>
+          <h2 class="title" id="cita-title" data-chars>Dale espacio a tu próximo <em>diseño.</em></h2>
+          <p class="booking-lead reveal">Cuéntanos qué te gustaría y cuándo prefieres visitarnos. Son cuatro pasos cortos.</p>
+          <p class="booking-honest reveal">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8v.01"/></svg>
+            Es una solicitud: el estudio revisa la disponibilidad y te contacta para confirmar la fecha y los detalles.
+          </p>
+        </div>
+
+        <div class="wizard-card" data-booking-card>
+          <form class="wizard" novalidate data-booking-form>
+            <div class="wizard-head" aria-hidden="true">
+              <p class="wizard-count"><span data-step-current>1</span><span class="wizard-count-total">/4</span></p>
+              <div class="wizard-bar"><span data-wizard-bar></span></div>
+            </div>
+            <ol class="wizard-steps" aria-label="Pasos de la solicitud" data-wizard-steps>
+              <li><button type="button" data-goto="1"><span class="ws-num">1</span><span class="ws-label">Servicio</span></button></li>
+              <li><button type="button" data-goto="2"><span class="ws-num">2</span><span class="ws-label">Fecha</span></button></li>
+              <li><button type="button" data-goto="3"><span class="ws-num">3</span><span class="ws-label">Tus datos</span></button></li>
+              <li><button type="button" data-goto="4"><span class="ws-num">4</span><span class="ws-label">Enviar</span></button></li>
+            </ol>
+            <p class="visually-hidden" aria-live="polite" data-step-announce></p>
+            <p class="form-hint">Los campos marcados con <span aria-hidden="true">*</span><span class="visually-hidden">asterisco</span> son obligatorios.</p>
+
+            <div class="panels">
+              <!-- Paso 1 -->
+              <section class="step" data-step-panel="1" aria-labelledby="step-1-title">
+                <h3 class="step-title" id="step-1-title" tabindex="-1">¿Qué te gustaría hacerte?</h3>
+                <div class="selected-design" data-selected-design hidden>
+                  <img src="" alt="" width="56" height="70" data-selected-design-img>
+                  <div>
+                    <span class="selected-design-label">Diseño de referencia</span>
+                    <strong data-selected-design-name></strong>
+                  </div>
+                  <button type="button" class="link-btn" data-remove-design>Quitar<span class="visually-hidden"> diseño de referencia</span></button>
+                </div>
+                <fieldset class="field" id="service-group" aria-describedby="service-error">
+                  <legend>Servicio <span aria-hidden="true">*</span></legend>
+                  <div class="tiles" data-service-options></div>
+                  <p class="field-error" id="service-error" hidden></p>
+                </fieldset>
+              </section>
+
+              <!-- Paso 2 -->
+              <section class="step" data-step-panel="2" aria-labelledby="step-2-title">
+                <h3 class="step-title" id="step-2-title" tabindex="-1">¿Cuándo te gustaría venir?</h3>
+                <div class="field">
+                  <label for="preferred_date">Fecha preferida <span aria-hidden="true">*</span></label>
+                  <div class="quick-dates" data-quick-dates hidden></div>
+                  <input id="preferred_date" name="preferred_date" type="date" required aria-describedby="preferred_date-error">
+                  <p class="field-error" id="preferred_date-error" hidden></p>
+                </div>
+                <fieldset class="field" id="preferred_time-group" aria-describedby="preferred_time-error">
+                  <legend>Horario preferido <span aria-hidden="true">*</span></legend>
+                  <div class="time-tiles">
+                    <label class="time-tile"><input type="radio" name="preferred_time" value="Por la mañana">
+                      <span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4"/></svg>Por la mañana</span></label>
+                    <label class="time-tile"><input type="radio" name="preferred_time" value="Por la tarde">
+                      <span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 17h18M6 17a6 6 0 0 1 12 0M12 5v3M4.9 9.9l1.4 1.4M19.1 9.9l-1.4 1.4M3 21h18"/></svg>Por la tarde</span></label>
+                    <label class="time-tile"><input type="radio" name="preferred_time" value="Tengo flexibilidad">
+                      <span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3c1 4.5 3.5 7 8 8-4.5 1-7 3.5-8 8-1-4.5-3.5-7-8-8 4.5-1 7-3.5 8-8z"/></svg>Tengo flexibilidad</span></label>
+                  </div>
+                  <p class="field-error" id="preferred_time-error" hidden></p>
+                </fieldset>
+              </section>
+
+              <!-- Paso 3 -->
+              <section class="step" data-step-panel="3" aria-labelledby="step-3-title">
+                <h3 class="step-title" id="step-3-title" tabindex="-1">¿Cómo te contactamos?</h3>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="customer_name">Tu nombre <span aria-hidden="true">*</span></label>
+                    <input id="customer_name" name="customer_name" type="text" autocomplete="name" required aria-describedby="customer_name-error">
+                    <p class="field-error" id="customer_name-error" hidden></p>
+                  </div>
+                  <div class="field">
+                    <label for="phone">Teléfono / WhatsApp <span aria-hidden="true">*</span></label>
+                    <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="10 dígitos" aria-describedby="phone-error">
+                    <p class="field-error" id="phone-error" hidden></p>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="email">Correo electrónico <span class="optional">(opcional)</span></label>
+                  <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error">
+                  <p class="field-error" id="email-error" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="notes">Cuéntanos tu idea <span class="optional">(opcional)</span></label>
+                  <textarea id="notes" name="notes" rows="3" maxlength="600" placeholder="Colores, forma, largo, si necesitas retiro…"></textarea>
+                </div>
+              </section>
+
+              <!-- Paso 4 -->
+              <section class="step" data-step-panel="4" aria-labelledby="step-4-title">
+                <h3 class="step-title" id="step-4-title" tabindex="-1">Revisa y envía</h3>
+                <dl class="review" data-review></dl>
+                <!-- Campo trampa contra spam: debe quedar vacío -->
+                <div class="hp" aria-hidden="true">
+                  <label for="website">No llenar este campo</label>
+                  <input id="website" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+                </div>
+                <button class="btn btn-pearl btn-block btn-submit" type="submit" data-submit>
+                  <span class="btn-label">Enviar solicitud</span>
+                  <span class="btn-spinner" aria-hidden="true"></span>
+                </button>
+                <p class="form-note">El estudio te contactará para confirmar disponibilidad y detalles. Tu cita queda confirmada solo cuando recibas esa confirmación.</p>
+                <div class="form-status" data-form-status role="status" aria-live="polite" tabindex="-1" hidden></div>
+                <noscript><p class="form-note">Activa JavaScript para enviar tu solicitud desde esta página.</p></noscript>
+              </section>
+            </div>
+
+            <div class="wizard-nav" data-wizard-nav>
+              <button class="btn btn-ghost btn-sm" type="button" data-prev><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>Atrás</span></button>
+              <button class="btn btn-pearl" type="button" data-next><span>Continuar</span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+          </form>
+
+          <div class="result" data-booking-result tabindex="-1" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="panel-section faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="faq-intro">
+          <p class="eyebrow"><span class="eyebrow-num">05</span> Preguntas frecuentes</p>
+          <h2 class="title" id="faq-title" data-chars>Antes de tu <em>cita.</em></h2>
+          <p class="faq-lead reveal">Elige una pregunta y te respondemos aquí mismo.</p>
+        </div>
+        <div class="chat reveal" data-chat>
+          <div class="chat-top" aria-hidden="true">
+            <span class="chat-avatar">n</span>
+            <span class="chat-who"><strong>nacré</strong><span>Respuestas rápidas</span></span>
+          </div>
+          <div class="chat-log" role="log" aria-live="polite" aria-label="Respuestas" data-chat-log tabindex="0"></div>
+          <div class="chat-questions" role="group" aria-label="Preguntas" data-chat-questions></div>
+          <noscript><p class="chat-noscript">Activa JavaScript para ver las respuestas.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="panel-section contact" id="contacto" aria-labelledby="contacto-title">
+      <div class="wrap">
+        <p class="eyebrow"><span class="eyebrow-num">06</span> Contacto</p>
+        <h2 class="title" id="contacto-title" data-chars>Nos encantará conocer tu <em>idea.</em></h2>
+        <div class="ticket reveal">
+          <dl class="ticket-main" data-contact-list></dl>
+          <div class="ticket-stub">
+            <p class="stub-kicker">Tu cita</p>
+            <p class="stub-big">nacré</p>
+            <p class="stub-text">Solicítala en línea y el estudio te confirma.</p>
+            <a class="btn btn-dark" href="#cita" data-magnetic><span>Solicitar cita</span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title" data-closing>
+      <div class="closing-nails" aria-hidden="true">
+        <img src="assets/img/nail-lilac.webp" width="300" height="520" alt="" loading="lazy" decoding="async">
+        <img src="assets/img/nail-cherry.webp" width="300" height="520" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="wrap">
+        <h2 class="fill-text" id="closing-title"><span data-fill>Tu próximo diseño empieza aquí.</span></h2>
+        <a class="btn btn-pearl btn-lg" href="#cita" data-magnetic><span>Solicitar mi cita</span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-top">
+      <nav aria-label="Pie de página">
+        <ul class="footer-nav">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#disenos">Diseños</a></li>
+          <li><a href="#estudio">El estudio</a></li>
+          <li><a href="#cita">Solicitar cita</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">© <span data-year>2026</span> NACRÉ — Nail Atelier</p>
+    </div>
+    <a class="footer-word" href="#inicio" aria-label="NACRÉ, volver al inicio" data-footer-word>nacré</a>
+  </footer>
+
+  <!-- Vista ampliada de la galería -->
+  <dialog class="lightbox" aria-labelledby="lightbox-title" data-lightbox>
+    <div class="lb-inner">
+      <div class="lb-stage" data-lightbox-stage>
+        <img src="" alt="" data-lightbox-img>
+      </div>
+      <div class="lb-info">
+        <button class="lb-close" type="button" data-lightbox-close>
+          <span class="visually-hidden">Cerrar</span>
+          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <p class="lb-cat" data-lightbox-cat></p>
+        <h2 class="lb-title" id="lightbox-title" data-lightbox-title></h2>
+        <p class="lb-count" data-lightbox-count></p>
+        <button class="btn btn-pearl" type="button" data-lightbox-similar><span>Quiero un diseño similar</span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="lb-note" data-lightbox-note hidden></p>
+        <div class="lb-nav">
+          <button class="round-btn" type="button" data-lightbox-prev>
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+            <span class="visually-hidden">Diseño anterior</span>
+          </button>
+          <button class="round-btn" type="button" data-lightbox-next>
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            <span class="visually-hidden">Diseño siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
