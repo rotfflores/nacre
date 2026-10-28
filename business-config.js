@@ -1,5 +1,5 @@
 /*
- * NACRÉ — Nail Atelier · Configuración del negocio
+ * Alba — Nail Atelier · Configuración del negocio
  * ------------------------------------------------------------
  * Este es el ÚNICO archivo que necesitas editar para personalizar el sitio
  * con la información real del estudio. Deja un campo vacío ("") o en null
@@ -8,27 +8,31 @@
  */
 window.NACRE_CONFIG = {
   business: {
-    name: "NACRÉ",
+    name: "Alba",
     descriptor: "Nail Atelier",
     // Número de WhatsApp de contacto (aparece en Contacto), formato internacional, solo dígitos.
     // México: 52 + 10 dígitos. Ejemplo de formato: "5215512345678" (no es un número real).
-    whatsapp: "",
+    whatsapp: "526182051723",
     instagram: {
-      handle: "",            // Ejemplo de formato: "nacre.nailatelier" (sin @)
-      url: ""                // Ejemplo de formato: "https://www.instagram.com/nacre.nailatelier/"
+      handle: "rotf.studio",
+      url: "https://www.instagram.com/rotf.studio/"
     },
     address: {
-      street: "",            // Calle y número
-      neighborhood: "",      // Colonia
-      city: "",              // Ciudad
-      state: "",             // Estado
-      postalCode: "",
+      isSample: true,
+      street: "Calle Alba 18", // Dirección ficticia para esta demostración
+      neighborhood: "Colonia Jardín",
+      city: "Durango",
+      state: "Durango",
+      postalCode: "34000",
       country: "MX",
       mapsUrl: ""            // Enlace de Google Maps (botón “Cómo llegar”)
     },
     // Horario. Ejemplo: { days: "Martes a viernes", hours: "10:00 – 19:00" }
-    hours: [],
-    siteUrl: ""              // URL pública final, p. ej. "https://nacre.mx" (para metadatos)
+    hours: [
+      { days: "Lunes a viernes", hours: "10:00 – 19:00" },
+      { days: "Sábado", hours: "10:00 – 16:00" }
+    ],
+    siteUrl: ""              // URL pública final, p. ej. "https://alba.mx" (para metadatos)
   },
 
   /*
@@ -43,7 +47,7 @@ window.NACRE_CONFIG = {
    */
   booking: {
     endpoint: "",
-    subject: "Nueva solicitud de cita — NACRÉ"
+    subject: "Nueva solicitud de cita — Alba"
   },
 
   // true: muestra “Por confirmar” en los datos de contacto faltantes (útil para presentar
@@ -61,12 +65,12 @@ window.NACRE_CONFIG = {
    * color: color de su tarjeta y de su opción en el formulario.
    */
   services: [
-    { id: "manicura", name: "Manicura", description: "Forma y cuidado para una apariencia limpia y natural.", price: null, priceFrom: false, duration: null, image: "assets/img/g-milky-nude.webp", color: "#F6D9DF" },
-    { id: "gel-semipermanente", name: "Gel semipermanente", description: "Color y acabado para acompañar tu estilo.", price: null, priceFrom: false, duration: null, image: "assets/img/g-burgundy-profundo.webp", color: "#C02550" },
-    { id: "unas-acrilicas", name: "Uñas acrílicas", description: "Explora distintas formas, largos y posibilidades de diseño.", price: null, priceFrom: false, duration: null, image: "assets/img/g-champagne-cromado.webp", color: "#E7C99B" },
-    { id: "refuerzo", name: "Refuerzo de uña natural", description: "Una opción para trabajar sobre el largo de tus propias uñas.", price: null, priceFrom: false, duration: null, image: "assets/img/g-nude-satinado.webp", color: "#F49AAE" },
-    { id: "nail-art", name: "Nail art", description: "Detalles y combinaciones para crear una propuesta personal.", price: null, priceFrom: false, duration: null, image: "assets/img/g-abstracto-blush.webp", color: "#CDB9F2" },
-    { id: "retiro-mantenimiento", name: "Retiro y mantenimiento", description: "Consulta la opción adecuada para tu aplicación actual.", price: null, priceFrom: false, duration: null, image: "assets/img/services.webp", color: "#A8E0D2" }
+    { id: "manicura", name: "Manicura", description: "Forma y cuidado para una apariencia limpia y natural.", price: null, priceFrom: false, duration: null, image: "assets/img/g-milky-nude-realistic.jpg", color: "#F6D9DF" },
+    { id: "gel-semipermanente", name: "Gel semipermanente", description: "Color y acabado para acompañar tu estilo.", price: null, priceFrom: false, duration: null, image: "assets/img/g-burgundy-profundo-realistic.jpg", color: "#C02550" },
+    { id: "unas-acrilicas", name: "Uñas acrílicas", description: "Explora distintas formas, largos y posibilidades de diseño.", price: null, priceFrom: false, duration: null, image: "assets/img/g-champagne-cromado-realistic.jpg", color: "#E7C99B" },
+    { id: "refuerzo", name: "Refuerzo de uña natural", description: "Una opción para trabajar sobre el largo de tus propias uñas.", price: null, priceFrom: false, duration: null, image: "assets/img/g-nude-satinado-realistic.jpg", color: "#F49AAE" },
+    { id: "nail-art", name: "Nail art", description: "Detalles y combinaciones para crear una propuesta personal.", price: null, priceFrom: false, duration: null, image: "assets/img/g-abstracto-blush-realistic.jpg", color: "#CDB9F2" },
+    { id: "retiro-mantenimiento", name: "Retiro y mantenimiento", description: "Consulta la opción adecuada para tu aplicación actual.", price: null, priceFrom: false, duration: null, image: "assets/img/services-realistic.jpg", color: "#A8E0D2" }
   ],
 
   // Nota opcional bajo el menú de servicios (p. ej. condiciones de precios “desde”).
@@ -85,18 +89,18 @@ window.NACRE_CONFIG = {
     inspiration: "Algunas imágenes son inspiración de referencia y no corresponden a trabajos del estudio."
   },
   gallery: [
-    { id: "milky-nude", name: "Milky nude", category: "minimalistas", image: "assets/img/g-milky-nude.webp", width: 800, height: 1000, alt: "Cinco uñas almendradas en tono blanco lechoso translúcido, dispuestas en abanico sobre terciopelo color ciruela.", source: "illustration" },
-    { id: "francesa-clasica", name: "Francesa clásica", category: "francesas", image: "assets/img/g-francesa-clasica.webp", width: 800, height: 1000, alt: "Uñas cuadradas en tono nude con punta francesa blanca, en abanico sobre piedra oscura.", source: "illustration" },
-    { id: "media-luna", name: "Media luna burgundy", category: "nail-art", image: "assets/img/g-media-luna.webp", width: 800, height: 800, alt: "Uñas ovaladas color burgundy con una media luna en tono nude en la base delineada en champaña, sobre fondo oscuro.", source: "illustration" },
-    { id: "burgundy-profundo", name: "Burgundy profundo", category: "especiales", image: "assets/img/g-burgundy-profundo.webp", width: 800, height: 1000, alt: "Cuatro uñas almendradas en burgundy profundo con acabado brillante, en diagonal sobre fondo oscuro.", source: "illustration" },
-    { id: "linea-fina", name: "Línea fina", category: "minimalistas", image: "assets/img/g-linea-fina.webp", width: 800, height: 1067, alt: "Uña nude con una línea fina burgundy y un pequeño punto champaña, junto a una uña nude brillante, sobre terciopelo violeta.", source: "illustration" },
-    { id: "micro-francesa", name: "Micro francesa", category: "francesas", image: "assets/img/g-micro-francesa.webp", width: 800, height: 800, alt: "Uñas almendradas nude con una punta francesa muy delgada, en diagonal sobre terciopelo color cereza oscuro.", source: "illustration" },
-    { id: "abstracto-blush", name: "Abstracto en blush", category: "nail-art", image: "assets/img/g-abstracto-blush.webp", width: 800, height: 1067, alt: "Uñas en tono blush con trazos abstractos burgundy y una línea champaña, alternadas con uñas lisas, sobre terciopelo cereza oscuro.", source: "illustration" },
-    { id: "perla-iridiscente", name: "Perla iridiscente", category: "especiales", image: "assets/img/g-perla-iridiscente.webp", width: 800, height: 800, alt: "Dos uñas almendradas con acabado perlado iridiscente sobre terciopelo violeta.", source: "illustration" },
-    { id: "nude-satinado", name: "Nude satinado", category: "minimalistas", image: "assets/img/g-nude-satinado.webp", width: 800, height: 800, alt: "Fila de uñas ovaladas en tono nude con acabado satinado sobre piedra oscura.", source: "illustration" },
-    { id: "francesa-burgundy", name: "Francesa burgundy", category: "francesas", image: "assets/img/g-francesa-burgundy.webp", width: 800, height: 1067, alt: "Dos uñas coffin en tono nude con punta francesa color burgundy, sobre terciopelo color ciruela.", source: "illustration" },
-    { id: "puntos-perla", name: "Puntos de perla", category: "nail-art", image: "assets/img/g-puntos-perla.webp", width: 800, height: 1000, alt: "Uña nude con tres pequeños puntos perlados en línea, junto a una uña blanco lechoso, sobre terciopelo violeta.", source: "illustration" },
-    { id: "champagne-cromado", name: "Champaña cromado", category: "especiales", image: "assets/img/g-champagne-cromado.webp", width: 800, height: 1067, alt: "Uñas coffin con acabado cromado en tono champaña, dispuestas en abanico sobre terciopelo color ciruela.", source: "illustration" }
+    { id: "milky-nude", name: "Milky nude", category: "minimalistas", image: "assets/img/g-milky-nude-realistic.jpg", width: 800, height: 1000, alt: "Cinco uñas almendradas en tono blanco lechoso translúcido, dispuestas en abanico sobre terciopelo color ciruela.", source: "illustration" },
+    { id: "francesa-clasica", name: "Francesa clásica", category: "francesas", image: "assets/img/g-francesa-clasica-realistic.jpg", width: 800, height: 1000, alt: "Uñas cuadradas en tono nude con punta francesa blanca, en abanico sobre piedra oscura.", source: "illustration" },
+    { id: "media-luna", name: "Media luna burgundy", category: "nail-art", image: "assets/img/g-media-luna-realistic.jpg", width: 800, height: 800, alt: "Uñas ovaladas color burgundy con una media luna en tono nude en la base delineada en champaña, sobre fondo oscuro.", source: "illustration" },
+    { id: "burgundy-profundo", name: "Burgundy profundo", category: "especiales", image: "assets/img/g-burgundy-profundo-realistic.jpg", width: 800, height: 1000, alt: "Cuatro uñas almendradas en burgundy profundo con acabado brillante, en diagonal sobre fondo oscuro.", source: "illustration" },
+    { id: "linea-fina", name: "Línea fina", category: "minimalistas", image: "assets/img/g-linea-fina-realistic.jpg", width: 800, height: 1067, alt: "Uña nude con una línea fina burgundy y un pequeño punto champaña, junto a una uña nude brillante, sobre terciopelo violeta.", source: "illustration" },
+    { id: "micro-francesa", name: "Micro francesa", category: "francesas", image: "assets/img/g-micro-francesa-realistic.jpg", width: 800, height: 800, alt: "Uñas almendradas nude con una punta francesa muy delgada, en diagonal sobre terciopelo color cereza oscuro.", source: "illustration" },
+    { id: "abstracto-blush", name: "Abstracto en blush", category: "nail-art", image: "assets/img/g-abstracto-blush-realistic.jpg", width: 800, height: 1067, alt: "Uñas en tono blush con trazos abstractos burgundy y una línea champaña, alternadas con uñas lisas, sobre terciopelo cereza oscuro.", source: "illustration" },
+    { id: "perla-iridiscente", name: "Perla iridiscente", category: "especiales", image: "assets/img/g-perla-iridiscente-realistic.jpg", width: 800, height: 800, alt: "Dos uñas almendradas con acabado perlado iridiscente sobre terciopelo violeta.", source: "illustration" },
+    { id: "nude-satinado", name: "Nude satinado", category: "minimalistas", image: "assets/img/g-nude-satinado-realistic.jpg", width: 800, height: 800, alt: "Fila de uñas ovaladas en tono nude con acabado satinado sobre piedra oscura.", source: "illustration" },
+    { id: "francesa-burgundy", name: "Francesa burgundy", category: "francesas", image: "assets/img/g-francesa-burgundy-realistic.jpg", width: 800, height: 1067, alt: "Dos uñas coffin en tono nude con punta francesa color burgundy, sobre terciopelo color ciruela.", source: "illustration" },
+    { id: "puntos-perla", name: "Puntos de perla", category: "nail-art", image: "assets/img/g-puntos-perla-realistic.jpg", width: 800, height: 1000, alt: "Uña nude con tres pequeños puntos perlados en línea, junto a una uña blanco lechoso, sobre terciopelo violeta.", source: "illustration" },
+    { id: "champagne-cromado", name: "Champaña cromado", category: "especiales", image: "assets/img/g-champagne-cromado-realistic.jpg", width: 800, height: 1067, alt: "Uñas coffin con acabado cromado en tono champaña, dispuestas en abanico sobre terciopelo color ciruela.", source: "illustration" }
   ],
 
   // Filtros de la galería: color = punto de color de cada filtro.
@@ -110,8 +114,8 @@ window.NACRE_CONFIG = {
 
   // Imágenes principales del sitio (sustitúyelas por fotografías reales del estudio).
   images: {
-    studio: { src: "assets/img/studio.webp", width: 1400, height: 934, alt: "Mesa de trabajo oscura con esmaltes cereza, lila, rosa y champaña, un abanico de muestras de uñas, perlas y un anillo dorado." },
-    studioDetail: { src: "assets/img/studio-detail.webp", width: 800, height: 1000, alt: "Carta de muestras con doce acabados y cuatro formas de uña sobre terciopelo violeta." }
+    studio: { src: "assets/img/studio-realistic.jpg", width: 1400, height: 934, alt: "Mesa de trabajo oscura con esmaltes cereza, lila, rosa y champaña, un abanico de muestras de uñas, perlas y un anillo dorado." },
+    studioDetail: { src: "assets/img/studio-detail-realistic.jpg", width: 800, height: 1000, alt: "Carta de muestras con doce acabados y cuatro formas de uña sobre terciopelo violeta." }
   },
 
   // Preguntas frecuentes. Respuestas honestas mientras no haya políticas confirmadas.

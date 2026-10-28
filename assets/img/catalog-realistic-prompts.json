@@ -1,0 +1,111 @@
+{
+  "generator": "Built-in image_gen tool",
+  "purpose": "Imágenes realistas generadas para galería, servicios y estudio. No son fotografías de trabajos realizados por Alba.",
+  "assets": [
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/g-milky-nude-realistic.jpg",
+      "width": 800,
+      "height": 1000,
+      "alt": "Cinco uñas almendradas en tono blanco lechoso translúcido, dispuestas en abanico sobre terciopelo color ciruela.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. Exact product and composition: Exactly five almond-shaped nail tips, semi-translucent milky nude white, fanned out on dark plum velvet. Realistic thin edges, softly tapered tips. Output aspect ratio 800:1000."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/g-francesa-clasica-realistic.jpg",
+      "width": 800,
+      "height": 1000,
+      "alt": "Uñas cuadradas en tono nude con punta francesa blanca, en abanico sobre piedra oscura.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. Exact product and composition: Five SQUARE-shaped nail tips, straight flat free edges with subtly softened corners, sheer nude pink base and classic white French tips following a curved smile line, fanned out on dark stone. Keep the nail silhouette square, NOT pointed almond. Output aspect ratio 800:1000."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/g-media-luna-realistic.jpg",
+      "width": 800,
+      "height": 800,
+      "alt": "Uñas ovaladas color burgundy con una media luna en tono nude en la base delineada en champaña, sobre fondo oscuro.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. Exact product and composition: Four OVAL nail tips in glossy deep burgundy. Each nail has a nude half-moon at its rounded CUTICLE BASE, outlined by one delicate champagne gold line. The free edge is burgundy, NOT a French tip. Dark background. Output aspect ratio 800:800."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/g-burgundy-profundo-realistic.jpg",
+      "width": 800,
+      "height": 1000,
+      "alt": "Cuatro uñas almendradas en burgundy profundo con acabado brillante, en diagonal sobre fondo oscuro.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. Exact product and composition: Exactly four long ALMOND nail tips in deep rich burgundy with glossy gel finish, arranged diagonally on a dark background. Thin realistic curved edges and deep color. Output aspect ratio 800:1000."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/g-linea-fina-realistic.jpg",
+      "width": 800,
+      "height": 1067,
+      "alt": "Uña nude con una línea fina burgundy y un pequeño punto champaña, junto a una uña nude brillante, sobre terciopelo violeta.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. Exact product and composition: Two nude ALMOND nail tips on violet velvet. One has a single extremely fine burgundy longitudinal line and one tiny champagne dot; the adjacent nail is plain glossy nude. Restrained minimalist nail art. Output aspect ratio 800:1067."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/g-micro-francesa-realistic.jpg",
+      "width": 800,
+      "height": 800,
+      "alt": "Uñas almendradas nude con una punta francesa muy delgada, en diagonal sobre terciopelo color cereza oscuro.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. Exact product and composition: Four ALMOND nude nail tips arranged diagonally on dark cherry velvet. Each has an exceptionally THIN precise white micro-French stripe only along its free edge. A natural sheer nude base, no broad white band. Output aspect ratio 800:800."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/g-abstracto-blush-realistic.jpg",
+      "width": 800,
+      "height": 1067,
+      "alt": "Uñas en tono blush con trazos abstractos burgundy y una línea champaña, alternadas con uñas lisas, sobre terciopelo cereza oscuro.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. Exact product and composition: Five ALMOND nail tips in soft blush pink on dark cherry velvet. Alternate plain blush nails with accent nails carrying elegant burgundy abstract curves and one fine champagne gold line. Clear minimalist flowing hand-painted strokes, not busy. Output aspect ratio 800:1067."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/g-perla-iridiscente-realistic.jpg",
+      "width": 800,
+      "height": 800,
+      "alt": "Dos uñas almendradas con acabado perlado iridiscente sobre terciopelo violeta.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. Exact product and composition: Exactly two ALMOND nail tips with a semi-translucent creamy pearl iridescent finish on violet velvet. Subtle pink, lavender and champagne optical shifts, fine pearlescence rather than chunky glitter. Output aspect ratio 800:800."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/g-nude-satinado-realistic.jpg",
+      "width": 800,
+      "height": 800,
+      "alt": "Fila de uñas ovaladas en tono nude con acabado satinado sobre piedra oscura.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. Exact product and composition: Five OVAL nail tips in a natural warm pink nude, arranged in an orderly row on dark stone. True soft SATIN finish with diffuse highlights, not high gloss chrome. Smooth rounded free edges, understated natural appearance. Output aspect ratio 800:800."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/g-francesa-burgundy-realistic.jpg",
+      "width": 800,
+      "height": 1067,
+      "alt": "Dos uñas coffin en tono nude con punta francesa color burgundy, sobre terciopelo color ciruela.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. Exact product and composition: Exactly two long COFFIN nail tips on plum velvet. The silhouette has tapered straight sides ending in a flat squared-off free edge. Sheer nude base and glossy deep burgundy French tips with a curved smile line. Not almond or pointed. Output aspect ratio 800:1067."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/g-puntos-perla-realistic.jpg",
+      "width": 800,
+      "height": 1000,
+      "alt": "Uña nude con tres pequeños puntos perlados en línea, junto a una uña blanco lechoso, sobre terciopelo violeta.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. Exact product and composition: Two ALMOND nail tips on violet velvet. First: glossy nude base with exactly THREE tiny dimensional ivory pearl beads arranged neatly in a single lengthwise line. Second: plain milky white. Delicate raised pearls, realistic shadows. Output aspect ratio 800:1000."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/g-champagne-cromado-realistic.jpg",
+      "width": 800,
+      "height": 1067,
+      "alt": "Uñas coffin con acabado cromado en tono champaña, dispuestas en abanico sobre terciopelo color ciruela.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. Exact product and composition: Five long COFFIN nail tips, fanned out on dark plum velvet. Tapered straight sides with FLAT squared-off free edges. Champagne metallic CHROME mirror finish with real studio reflections, pale warm gold rather than yellow glitter. Not almond. Output aspect ratio 800:1067."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/services-realistic.jpg",
+      "width": 900,
+      "height": 1200,
+      "alt": "Herramientas de manicura para retiro y mantenimiento, con lima, algodón y muestras realistas de uñas sobre una mesa color burgundy.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. Editorial still life for the service \"Retiro y mantenimiento\": a neat clean professional manicure station, a fine emery nail file, lint-free cotton pads, foil removal wraps, stainless cuticle pusher and two realistic almond gel nail sample tips in milky nude and deep burgundy. Three unlabeled glass polish bottles in cherry, lilac and blush sit behind the tools. Actual recognizable salon tools, no unsafe cutting, no hands or fingers. Dark burgundy tabletop, macro material realism, elegant uncluttered composition. Portrait 3:4."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/studio-realistic.jpg",
+      "width": 1400,
+      "height": 934,
+      "alt": "Mesa de manicura oscura con esmaltes cereza, lila, rosa y champaña, muestras realistas de uñas, perlas y un anillo dorado.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. A horizontal editorial photograph of an elegant dark manicure worktable, real glass unlabeled polish bottles in cherry, lavender, blush, burgundy and champagne, a fan of six REALISTIC thin curved almond manicure sample tips on plum velvet, a small ceramic saucer of pearls and a delicate gold ring. Real materials, real reflected light, warm intimate salon mood. Compose as a premium salon still life photographed from above, not flat graphic symbols. Landscape aspect 1400:934."
+    },
+    {
+      "path": "C:/Users/Lenovo Thinkpad/Documents/rotf.com/paginas/uñas-v3/assets/img/studio-detail-realistic.jpg",
+      "width": 800,
+      "height": 1000,
+      "alt": "Doce muestras realistas de uñas con acabados nude, francesa, burgundy, perla, lila y champaña en cuatro formas sobre terciopelo violeta.",
+      "prompt": "Use case: product-mockup. Premium macro beauty PRODUCT PHOTOGRAPH for a luxury nail salon website. Photorealistic manicure press-on sample tips, not attached to fingers. Show physically plausible thin edges, C-curves, gel thickness and subtle surface detail, crisp realistic reflections and soft contact shadows. Real tactile velvet or stone, soft directional studio illumination, rich dark burgundy/plum palette. NOT an illustration, flat vector, generic smooth geometric shape or stylized 3D render. Entire nails visible, balanced editorial framing with 12% breathing space, nail design clearly readable in a small website card. No hands, fingers, labels, text, logos, watermark or extra objects. A real salon sample board of EXACTLY TWELVE realistic manicure sample tips, arranged in THREE neat rows of FOUR on dark violet velvet. Four clearly distinct shapes across each row: ALMOND rounded taper, OVAL smoothly rounded, SQUARE flat straight edge, COFFIN tapered sides and flat edge. Color finishes vary naturally across the 12 tips: milky nude, sheer blush, white French, burgundy French, solid burgundy, pearl iridescent, lilac and champagne chrome. Clean elegant selection of real nail tips with real thickness, dimensional reflections and soft cast shadows. No printed labels. Portrait 4:5."
+    }
+  ]
+}

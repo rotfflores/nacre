@@ -1,4 +1,4 @@
-# NACRÉ — Nail Atelier · Sitio web (versión 3, "nácar nocturno")
+# Alba — Nail Atelier · Sitio web (versión 3, "nácar nocturno")
 
 Sitio de una sola página para un estudio de uñas. Diseño oscuro con acentos cereza, lila, rosa y champaña, y un degradado perlado (nácar) en los titulares y botones principales.
 
@@ -30,7 +30,7 @@ La solicitud de cita se envía dentro de la página (no abre WhatsApp). Como el 
 - **Formspree (recomendado):** crea una cuenta gratis en https://formspree.io, crea un formulario con el correo del estudio y copia su URL, por ejemplo `https://formspree.io/f/abcdwxyz`. Incluye protección contra spam y un panel con todas las solicitudes.
 - **FormSubmit (sin cuenta):** usa `https://formsubmit.co/ajax/correo-del-estudio@dominio.com`. El primer envío manda un correo de activación a esa dirección; hay que confirmarlo una vez.
 
-Mientras `endpoint` esté vacío, el formulario funciona en **modo vista previa**: recorre los 4 pasos, valida los datos y muestra la pantalla final, pero dice claramente que la solicitud no se envió. No finge envíos.
+Mientras `endpoint` esté vacío, el formulario valida los datos y muestra una confirmación animada de demostración. La pantalla aclara que los datos no se enviaron y que la cita no quedó confirmada.
 
 Cada solicitud incluye: nombre, teléfono/WhatsApp, correo (opcional), servicio, fecha preferida, horario, diseño de referencia (si eligió uno) y comentarios. Si falla la conexión, se muestra un error y los datos se conservan para reintentar. Hay un campo oculto contra bots.
 
@@ -50,11 +50,15 @@ Los datos estructurados para buscadores (schema.org `NailSalon`) se agregan solo
 
 Recomendado: WebP o JPG, 1000 px de ancho como máximo para la galería y 1600 px para el estudio, menos de 250 KB por imagen. Si una imagen falta o no carga, el sitio muestra un recuadro “Imagen pendiente” con las mismas proporciones en lugar de una imagen rota.
 
-Las uñas que flotan en la portada y en el cierre (`assets/img/nail-*.webp`, con fondo transparente) son decorativas; pueden quedarse aunque llegue fotografía real.
+Las uñas que flotan en la portada y en el cierre usan la prueba de recortes realistas generados con ImageGen (`assets/img/nail-*-realistic.png`, 300×520 px, fondo transparente). Son imágenes decorativas generadas, no fotografías de trabajos del estudio. Los seis prompts y las rutas están en `assets/img/nails-realistic-prompts.json`.
+
+Para volver a las figuras anteriores, cambia las referencias `nail-*-realistic.png` de `index.html` por sus equivalentes `nail-*.webp`; los originales se conservan.
+
+La galería, los servicios y las imágenes del estudio usan además quince imágenes realistas generadas (`assets/img/*-realistic.jpg`). Cada diseño respeta la forma, el color y el acabado descritos en el catálogo. El archivo `assets/img/catalog-realistic-prompts.json` contiene los prompts, las medidas y las rutas finales. Los archivos WebP anteriores se conservan como respaldo.
 
 ### Cambiar el nombre de la marca
 
-“NACRÉ” es un nombre propuesto. Cámbialo en `business-config.js`, en el logotipo de `index.html` (cabecera, boleto de contacto y la palabra grande del pie), en `<title>` y en las etiquetas `og:`. La imagen `og-image.jpg` también lleva el nombre.
+El nombre actual es “Alba”. Para cambiarlo, actualízalo en `business-config.js`, en el logotipo de `index.html` (cabecera, boleto de contacto y la palabra grande del pie), en `<title>` y en las etiquetas `og:`. La imagen `og-image.jpg` también lleva el nombre.
 
 ## Qué incluye
 
@@ -65,7 +69,7 @@ Las uñas que flotan en la portada y en el cierre (`assets/img/nail-*.webp`, con
 - **El estudio:** cuatro tarjetas de colores que se apilan al hacer scroll; las anteriores se encogen y oscurecen. La foto se revela en círculo.
 - **Solicitud de cita en 4 pasos:** servicio → fecha y horario (con atajos “Mañana”, “Este sábado”, “En una semana”) → tus datos → revisar y enviar. Validación por paso, botones “Cambiar” en el resumen, fechas pasadas bloqueadas y pantalla final con un “esmalte” que se llena.
 - **Preguntas frecuentes en formato chat**, con indicador de “escribiendo”.
-- **Contacto en forma de boleto** y un cierre cuyo texto se llena de color con el scroll; en el pie, la palabra “nacré” gigante.
+- **Contacto en forma de boleto** y un cierre cuyo texto se llena de color con el scroll; en el pie, la palabra “alba” gigante.
 - Botones magnéticos y un destello suave que sigue al cursor (solo con mouse).
 - Accesible con teclado y lector de pantalla: foco visible, menú y vista ampliada con manejo de foco, anuncios de cada paso del formulario.
 - Respeta `prefers-reduced-motion` (sin animaciones, sin galería fija). Si JavaScript falla o tarda, el contenido se muestra igual.
@@ -75,11 +79,11 @@ Las uñas que flotan en la portada y en el cierre (`assets/img/nail-*.webp`, con
 
 **Datos**
 - [ ] **Correo que recibirá las solicitudes** y alta en Formspree o FormSubmit (ver “Activar el envío del formulario”)
-- [ ] Nombre definitivo de la marca (NACRÉ es propuesto)
-- [ ] Número de WhatsApp de contacto
-- [ ] Usuario y enlace de Instagram
-- [ ] Dirección completa y enlace de Google Maps
-- [ ] Horario de atención
+- [x] Nombre definitivo de la marca: Alba
+- [x] Número de WhatsApp de contacto: 526182051723
+- [x] Usuario y enlace de Instagram: @rotf.studio
+- [ ] Sustituir la dirección ficticia de muestra por la dirección real y su enlace de Google Maps
+- [ ] Confirmar el horario de muestra antes de publicar
 - [ ] Confirmar qué servicios se ofrecen, con precios en MXN, condiciones de precios “desde” y duraciones (opcional)
 - [ ] Respuestas reales de las preguntas frecuentes (precios de diseño, retiros, anticipos o cancelaciones si aplican)
 - [ ] Confirmar que el texto de “El estudio” describe bien el ambiente y la atención

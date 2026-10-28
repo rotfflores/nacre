@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NACRÉ — Nail Atelier · "Nácar nocturno"
+   Alba — Nail Atelier · "Nácar nocturno"
    Índice: 1 Variables · 2 Base · 3 Utilidades y movimiento · 4 Botones ·
    5 Cabecera y menú · 6 Portada · 7 Secciones · 8 Servicios · 9 Diseños ·
    10 Vista ampliada · 11 Estudio · 12 Cita · 13 Preguntas · 14 Contacto ·
@@ -98,13 +98,6 @@ ul, ol { padding: 0; }
   letter-spacing: 0.16em; text-transform: uppercase;
   color: var(--rose);
 }
-.eyebrow-num {
-  display: inline-grid; place-items: center;
-  min-width: 2.4em; height: 2.4em; padding: 0 0.5em;
-  border: 1px solid currentColor; border-radius: 999px;
-  letter-spacing: 0.02em;
-}
-
 .title {
   margin-top: 1rem;
   font: 750 clamp(2.5rem, 6.2vw, 5.6rem)/0.95 var(--font-display);
@@ -326,7 +319,6 @@ ul, ol { padding: 0; }
   font: 750 clamp(2.4rem, 12vw, 4.4rem)/1.05 var(--font-display); letter-spacing: -0.04em;
   color: var(--cream); text-decoration: none;
 }
-.nav-num { font: 600 0.9rem/1 var(--font-body); letter-spacing: 0.1em; opacity: 0.75; }
 .nav-list li { opacity: 0; transform: translateY(40px); transition: opacity 0.4s, transform 0.4s; }
 .nav.is-open .nav-list li {
   opacity: 1; transform: none;
@@ -362,7 +354,7 @@ ul, ol { padding: 0; }
   }
   .nav-list a:hover .nav-text span { transform: translateY(-1.2em); }
   .nav-list a[aria-current="true"] { color: var(--cream); background: rgba(251, 239, 234, 0.08); }
-  .nav-num, .nav-foot { display: none; }
+  .nav-foot { display: none; }
 }
 
 /* 6. Portada -------------------------------------------------------------- */
@@ -858,8 +850,6 @@ ul, ol { padding: 0; }
 }
 .wizard-head, .wizard-steps, .wizard-nav { display: none; }
 .js .wizard-head { display: flex; align-items: center; gap: 1.2rem; }
-.wizard-count { font: 800 2.6rem/1 var(--font-display); letter-spacing: -0.05em; font-variant-numeric: tabular-nums; }
-.wizard-count-total { font-size: 1.1rem; color: var(--muted); letter-spacing: 0; margin-left: 2px; }
 .wizard-bar { flex: 1; height: 6px; border-radius: 6px; background: rgba(251, 239, 234, 0.1); overflow: hidden; }
 .wizard-bar span { display: block; height: 100%; border-radius: inherit; background: var(--pearl); transform-origin: 0 50%; transform: scaleX(var(--wp, 0.25)); transition: transform 0.8s var(--ease); }
 
@@ -873,19 +863,12 @@ ul, ol { padding: 0; }
   font: 600 0.88rem/1 var(--font-body);
   transition: background 0.4s, color 0.4s, border-color 0.4s;
 }
-.ws-num {
-  display: inline-grid; place-items: center; flex: none;
-  width: 22px; height: 22px; border-radius: 50%;
-  background: rgba(251, 239, 234, 0.1); font-size: 0.75rem;
-}
 .ws-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .wizard-steps button.is-done { color: var(--cream); border-color: rgba(244, 154, 174, 0.5); }
-.wizard-steps button.is-done .ws-num { background: var(--rose); color: var(--ink); }
 .wizard-steps button[aria-current="step"] { background: var(--cream); color: var(--ink); border-color: var(--cream); }
-.wizard-steps button[aria-current="step"] .ws-num { background: var(--ink); color: var(--cream); }
 @media (max-width: 520px) {
-  .wizard-steps button:not([aria-current="step"]) .ws-label { display: none; }
-  .wizard-steps li:has(button[aria-current="step"]) { flex: 2.4; }
+  .wizard-steps { flex-wrap: wrap; }
+  .wizard-steps li { flex: 1 1 45%; }
 }
 
 .form-hint { margin-top: 1rem; font-size: 0.85rem; color: var(--muted); }
@@ -946,11 +929,13 @@ ul, ol { padding: 0; }
   font-weight: 600; line-height: 1.25;
   transition: background 0.3s, border-color 0.3s, transform 0.4s var(--spring), color 0.3s;
 }
-.tile span::before {
-  content: ""; flex: none; width: 14px; height: 22px;
-  border-radius: 50% 50% 45% 45% / 62% 62% 38% 38%;
-  background: var(--dot); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+.tile-nail {
+  flex: none; width: 30px; height: 52px; object-fit: contain;
+  filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.35));
+  transition: transform 0.4s var(--spring);
 }
+.tile:hover .tile-nail { transform: rotate(-8deg) translateY(-2px); }
+.tile input:checked + span .tile-nail { transform: rotate(6deg); }
 .tile span::after {
   content: ""; position: absolute; right: 14px; top: 50%; width: 22px; height: 22px; margin-top: -11px;
   border-radius: 50%; border: 1.5px solid rgba(251, 239, 234, 0.35);

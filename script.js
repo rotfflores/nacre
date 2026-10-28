@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NACRÉ — Nail Atelier · Interacciones ("nácar nocturno")
+   Alba — Nail Atelier · Interacciones ("nácar nocturno")
    Sin dependencias. Todo el contenido editable vive en business-config.js
    ========================================================================== */
 (function () {
@@ -829,10 +829,26 @@
       quickWrap = $("[data-quick-dates]", form);
 
       var options = $("[data-service-options]", form);
+      var serviceNails = {
+        "manicura": "pearl",
+        "gel-semipermanente": "cherry",
+        "unas-acrilicas": "champ",
+        "refuerzo": "french",
+        "nail-art": "aurora",
+        "retiro-mantenimiento": "lilac",
+        "asesoria": "aurora"
+      };
       services.concat([ADVICE]).forEach(function (s) {
         options.appendChild(el("label", { className: "tile" }, [
           el("input", { type: "radio", name: "service", value: s.id }),
-          el("span", { style: "--dot:" + (s.color || "#F6C9D4"), text: s.name })
+          el("span", null, [
+            el("img", {
+              className: "tile-nail",
+              src: "assets/img/nail-" + (serviceNails[s.id] || "pearl") + "-realistic.png",
+              width: "30", height: "52", alt: "", "aria-hidden": "true", decoding: "async"
+            }),
+            s.name
+          ])
         ]));
       });
 
@@ -1023,7 +1039,7 @@
 
     function updateChrome() {
       if (!bar) return;
-      countEl.textContent = step;
+      if (countEl) countEl.textContent = step;
       bar.style.setProperty("--wp", (step / 4).toFixed(2));
       stepBtns.forEach(function (btn) {
         var n = Number(btn.getAttribute("data-goto"));
@@ -1103,23 +1119,24 @@
       result.innerHTML = "";
       var first = data.name.split(" ")[0];
       var sent = kind === "sent";
+      var demo = kind === "demo";
       var nodes = [
         el("div", {
           className: "polish" + (sent ? "" : " is-preview"),
           "aria-hidden": "true",
           html: '<span class="polish-fill"></span><svg viewBox="0 0 24 24">' +
-            (sent ? '<path class="draw" d="M5 12.5l4.5 4.5L19 7.5"/>' : '<path class="draw" d="M12 6.5v7M12 17v.5"/>') + "</svg>"
+            (sent || demo ? '<path class="draw" d="M5 12.5l4.5 4.5L19 7.5"/>' : '<path class="draw" d="M12 6.5v7M12 17v.5"/>') + "</svg>"
         }),
-        sent ? null : el("p", { className: "result-badge", text: "Vista previa" }),
-        el("h3", { className: "result-title", text: sent ? "¡Gracias, " + first + "!" : "Tu solicitud está lista, " + first + "." }),
+        sent ? null : el("p", { className: "result-badge", text: "Demostración" }),
+        el("h3", { className: "result-title", text: sent || demo ? "¡Solicitud completada, " + first + "!" : "Tu solicitud está lista, " + first + "." }),
         el("p", {
           className: "result-text",
           text: sent
             ? "Recibimos tu solicitud. El estudio revisará la disponibilidad y te contactará al " + data.phone + " para confirmar tu cita. Hasta entonces, tu cita no está confirmada."
-            : "Este formulario todavía no está conectado a un servicio de envío, así que la solicitud no se envió. Cuando el estudio active el envío, recibirá exactamente estos datos."
+            : "Recuerda guardar tu fecha preferida y tener a mano tu diseño de referencia. El estudio te contactará para confirmar los detalles cuando reciba tu solicitud."
         }),
         summary(data),
-        resetButton(sent ? "Enviar otra solicitud" : "Volver al formulario", sent)
+        resetButton(sent || demo ? "Hacer otra solicitud" : "Volver al formulario", sent || demo)
       ];
       nodes.forEach(function (n) { if (n) result.appendChild(n); });
       form.hidden = true;
@@ -1168,13 +1185,13 @@
       var endpoint = config.booking && isFilled(config.booking.endpoint) ? config.booking.endpoint.trim() : "";
 
       // Campo trampa lleno = bot: no se envía nada
-      if (value("_gotcha")) { showResult("sent", data); return; }
+      if (value("_gotcha")) { showResult("demo", data); return; }
 
       setLoading(true);
       if (!endpoint) {
         window.setTimeout(function () {
           setLoading(false);
-          showResult("preview", data);
+          showResult("demo", data);
         }, reducedMotion ? 0 : 700);
         return;
       }
@@ -1331,7 +1348,7 @@
 
     var cityLine = [addr.neighborhood, addr.city].filter(isFilled).join(", ");
     var stateLine = [addr.state, isFilled(addr.postalCode) ? "C.P. " + addr.postalCode : ""].filter(isFilled).join(", ");
-    group("Dirección", "pin", [addr.street, cityLine, stateLine], isFilled(addr.mapsUrl) ? extLink(addr.mapsUrl, "Cómo llegar") : null);
+    group("Dirección de muestra", "pin", [addr.street, cityLine, stateLine], isFilled(addr.mapsUrl) ? extLink(addr.mapsUrl, "Cómo llegar") : null);
 
     var hours = Array.isArray(business.hours) ? business.hours : [];
     group("Horario", "clock", hours.map(function (h) { return [h.days, h.hours].filter(isFilled).join(" · "); }));
@@ -1348,7 +1365,7 @@
   function injectStructuredData() {
     var addr = business.address || {};
     var digits = whatsappDigits();
-    var hasAddress = isFilled(addr.street) && isFilled(addr.city);
+    var hasAddress = addr.isSample !== true && isFilled(addr.street) && isFilled(addr.city);
     if (!hasAddress && !digits) return;
     var data = {
       "@context": "https://schema.org",
